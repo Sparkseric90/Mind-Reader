@@ -24,7 +24,7 @@ function resetState() {
     renderView()
 }
 
-// This creates the symbols and then randomizes them everytime you restart
+// This creates the symbols and then randomizes them
 function randomsym() {
     var rightAns = symbls[Math.ceil(Math.random() * 10)]
     var str = "<br>";
@@ -41,10 +41,11 @@ function randomsym() {
             answerSym = rightAns
         }
     }
-    // display symbols
+    // displays the symbols
     return str;
 }
 
+// All the states from 1-6. Each has different elements they use and return to the corresponding view.
 function renderView() {
     if (state == 1) {
         document.getElementById("main").innerHTML = "Wanna play a game? I can read your mind!"
