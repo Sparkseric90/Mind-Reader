@@ -28,7 +28,7 @@ function resetState() {
 function randomsym() {
     var rightAns = symbls[Math.ceil(Math.random() * 10)]
     var str = "<br>";
-    for (i = 0; i <= 100; i++) {
+    for (i = 0; i <= 99; i++) {
         if (i % 9) {
             var sym = symbls[Math.ceil(Math.random() * 10)]
 
